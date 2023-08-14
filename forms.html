@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body class="myClass">
+    <div style="display: inline-block;">
+        <h2 style="margin-left: 80px;margin-bottom: 6px; display: inline-block; font-family: cursive;">Registration form
+        </h2>
+    </div><br>
+    <form id="formId">
+        <label for="myname">Name: </label>
+        <input type="text" id="myname" placeholder="enter name here">
+        <br><br>
+        <label for="email">Email: </label>
+        <input type="email" id="email" placeholder="enter email here"><br /><br>
+        <label for="phone">Phone:</label>
+        <input type="number" id="phone" placeholder="enter phone number here"><br><br>
+        <label for="address"> Address:</label><br>
+        <textarea name="" id="address" cols="10" rows="2" placeholder="enter your address"></textarea><br><br>
+        Gender:<br>
+        <select>
+            <label for="ma">
+                <option name="Gender" value="male" id="ma">male</option>
+            </label><br>
+            <label for="fe">
+                <option name="Gender" value="female" id="fe">female</option>
+            </label><br>
+            <label for="oth">
+                <option type="radio" name="Gender" value="other" id="oth">other</option>
+            </label><br>
+        </select><br>
+        <label for="hobbies">Hobbies:</label><br><br>
+        <select  multiple size="1">
+            <option value="sports">Select a value</option>
+            <option value="music">music</option>
+            <option value="dance">dance</option>
+            <option value="cinema">cinema</option>
+            <option value="sports">sports</option>
+            <option value="music">music</option>
+            <option value="dance">dance</option>
+            <option value="cinema">cinema</option>
+        </select>
+        <br />
+        Hobbies:<br>
+        <label for="mu">
+            <input type="checkbox" value="music" id="mu">music<br>
+        </label>
+        <label for="sp">
+            <input type="checkbox" value="sports" id="sp">sports<br>
+        </label>
+        <label for="da">
+            <input type="checkbox" value="dance" id="da">dance<br>
+        </label>
+        <label for="ci">
+            <input type="checkbox" value="cinema" id="ci">cinema<br>
+        </label>
+        <p> I declare that all the information filled above is correct</p>
+
+        <button type="button" onclick="onValidate()" style="margin-left:70px ;">submit</button>
+        <input type="reset" value="reset" style="margin-left:30px ;">
+
+    </form>
+    <h3 id="first"></h3>
+    <h3 id="second"></h3>
+    <h3 id="third"></h3>
+    <h3 id="fourth"></h3>
+    <h3 id="fifth"></h3>
+    <h3 id="sixth"></h3>
+
+    <p id="a"></p>
+    <p id="b"></p>
+    <p id="c"></p>
+    <p id="d"></p>
+    <p id="e"></p>
+    <p id="f"></p>
+
+
+    <script src="forms.js"></script>
+
+</body>
+
+</html>
